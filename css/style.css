@@ -368,3 +368,203 @@ header  img{
     }
 
 }
+
+
+.portfolio {
+    background-color: black;
+    padding: 10px 0 30px;
+}
+
+.portfolio h1 {
+font-family: 'Saira Condensed';
+font-size: 28px;
+text-transform: uppercase;
+color: white;
+font-weight: 800;
+text-align: center;
+padding: 10px 20px;
+margin-bottom: 15px;;
+}
+
+.portfolio .web img {
+    width: 100%;
+}
+
+.portfolio .about {
+    color: white;
+    font-family: 'Saira';
+    font-weight: normal;
+    padding: 10px 20px 20px 0;
+    text-align: left;
+}
+.portfolio .about h2 {
+    font-size: 18px;
+    border-bottom: 2px solid white;
+    padding-bottom: 20px;
+    margin-bottom: 12px;
+    text-indent: 20px;
+}
+
+.portfolio .about p {
+    font-size: 12px;
+    padding-left: 20px;
+}
+
+.portfolio .project{
+    margin-bottom: 40px;
+    max-width: 1600px;
+    margin: 0 auto 20px;
+}
+
+.portfolio .project:nth-of-type(odd) {
+    background-color: orangered;
+}
+
+.portfolio .project:nth-of-type(even) {
+    background-color: deepskyblue;
+}
+
+@media(min-width: 768px)  {
+    .portfolio h1 {
+        font-size: 40px;
+    }
+}
+
+@media (orientation: landscape) {
+    .web, .about {
+        width: 50%;
+        float: left;
+
+    }
+
+    .project .web img {
+        display: block;
+        height: 52vh;
+    }
+
+    .project:nth-of-type(even) .web{
+        float: right;
+    }
+
+    .project:nth-of-type(even) .about h2{
+        text-indent: 0;
+        margin-left: 40px;
+    }
+    .project:nth-of-type(even) .about {
+       padding-right: 0;
+    }
+    .project:nth-of-type(even) .about p{
+        padding-right: 20px;
+     }
+}
+
+
+@media (orientation: landscape) and (min-width: 1400px)
+{
+    .portfolio h1 {
+       font-size: 60px;
+       padding: 30px 0;
+        }
+        
+        
+        
+       
+        .portfolio .about h2 {
+            padding-top: 50px;
+            font-size: 28px;
+            text-indent: 40px;
+            margin-bottom: 50px;
+        }
+        
+        .portfolio .about p {
+            font-size: 18px;
+            padding-left: 40px;
+            line-height: 180%;
+        }
+        
+        .portfolio .project{
+            margin-bottom: 40px;
+            max-width: 1600px;
+            margin: 0 auto 20px;
+        }
+}
+
+/* MOTTO ............................... */
+
+.motto {
+    background-image: url(../images/motto.jpg);
+    background-repeat: no-repeat;
+    color: white;
+background-position: center;
+background-size: cover;
+text-align: center;
+background-attachment: fixed;
+/* max-width: 1600px; */
+}
+
+ .bgmotto {
+    background-color: rgba(0, 63, 114, 0.5);
+    padding: 30px 10px;
+
+}
+
+.motto h2 {
+text-transform: uppercase;
+font-family: 'Saira';
+font-size: 18px;
+margin-bottom: 85px;
+margin-top: 50px;
+}
+
+.motto p {
+    font-family: 'Saira';
+    margin: 30px 30px;
+    
+}
+
+.motto .mtext {
+    font-size: 18px;
+}
+
+.motto .author {
+    padding-bottom: 140px;
+    font-size: 11px;
+}
+
+@media (min-width: 1024px){
+.motto h2{
+    font-size: 24px;
+}
+
+.motto p{
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
+    .motto .mtext {
+    font-size: 24px;
+}
+.motto .author {
+    font-size: 15px;
+}
+
+
+}
+
+@media (orientation: portrait) and (min-width: 768px){
+.motto h2 {
+    font-size: 26px;
+}
+.motto p{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.motto .mtext{
+    font-size: 26px;
+}
+
+.motto .author{
+    font-size: 18px;
+}
+}
