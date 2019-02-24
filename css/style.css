@@ -97,6 +97,26 @@ header img{
     }
 }
 
+/* @media  (min-width: 620px) {
+    header div.welcome h1 {
+        font-size: 28px;
+    }
+    header div.welcome h2 {
+        font-size: 28px;
+    }
+
+    header img{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: 50vh;
+    }
+
+    header div.welcome button {
+        font-size: 16px;
+        line-height: 40px;
+    } */
+
 @media (orientation: landscape) and (min-width: 640px) {
     header div.welcome h1 {
         font-size: 28px;
@@ -114,6 +134,7 @@ header img{
 @media (orientation: landscape) and (min-width: 1024px){
     header div.welcome {
         left: 5%;
+        top: 10%;
     }
 header div.welcome p {
     font-size: 56px;
@@ -142,6 +163,8 @@ header img{
     header div.welcome {
         left: 10%;
     text-align: left;
+    top: 0;
+    
     
     }
 header div.welcome p {
@@ -179,6 +202,7 @@ header img{
     header div.welcome {
         left: 10%;
     text-align: left;
+    top: -5%;
     
     }
 header div.welcome p {
@@ -248,6 +272,47 @@ header div.welcome button {
     margin-top: 34px;
     line-height: 44px;
     font-size: 24px;
+}
+header  img{
+    right: -20%;
+}
+}
+@media (orientation: portrait) and (min-width: 768px)
+{
+    header div.welcome p{
+        font-size: 74px;
+    }
+header div.welcome h1{
+    font-size: 34px;
+}
+header div.welcome h2{
+    font-size: 34px;
+}
+header div.welcome button {
+    margin-top: 34px;
+    line-height: 64px;
+    font-size: 34px;
+}
+header  img{
+    right: -20%;
+}
+}
+
+@media (orientation: portrait) and (min-width: 1024px)
+{
+    header div.welcome p{
+        font-size: 104px;
+    }
+header div.welcome h1{
+    font-size: 54px;
+}
+header div.welcome h2{
+    font-size: 44px;
+}
+header div.welcome button {
+    margin-top: 34px;
+    line-height: 84px;
+    font-size: 44px;
 }
 header  img{
     right: -20%;
@@ -697,6 +762,7 @@ margin-top: 50px;
 }
 .wrap{
     max-width: 1024px;
+    margin: 0 auto;
 }
 .contact h1{
     color: white;
@@ -758,21 +824,51 @@ margin-top: 50px;
     padding-bottom: 30px;
 }
 
+@media (min-width: 768px){
+    .wrap{
+        padding-left: 90px;
+    }
+    .contact form{
+        float: left;
+        width: 50%;
+        
+    }
+
+    .contact form input, .contact form textarea, .contact form button{
+        width: 50%;
+    }
+   .contact .socials{
+       float: left;
+       width: 40%;
+        
+    }
+}
+
+
+@media (min-width: 1024px){
+    .wrap{
+        padding-left: 120px;
+    }
+    .contact form{
+        float: left;
+        width: 50%;
+    }
+
+    .contact form input, .contact form textarea, .contact form button{
+        width: 50%;
+    }
+   .contact .socials{
+       float: left;
+       width: 40%;
+        
+    }
+}
 
 footer {
     background-color: #29a9df;
     text-align: center;
     padding: 40px 0;
     font-family: 'Saira', sans-serif;
-}
-
-@media (min-width: 1024px){
-    .contact form{
-        float: left;
-    }
-    .social{
-        
-    }
 }
 
 
